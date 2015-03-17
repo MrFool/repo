@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="stylesheets/teammatesCommon.css" type="text/css">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: black; background-image: none;">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/index.html">TEAMMATES</a>
+                <a class="navbar-brand" href="/index.html">
+                    <img alt="TEAMMATES[Logo] - Online Peer Feedback/Evaluation System for Student Team Projects" src="images/teammateslogo.jpg" 
+                    style="width: 150px; height: 50px; position: absolute; top: 0">
+                </a>
             </div>
         </div>
     </div>
