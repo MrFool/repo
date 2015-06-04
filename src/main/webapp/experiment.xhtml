@@ -1,0 +1,164 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+   xmlns:f="http://java.sun.com/jsf/core"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+   <h:head id="head">
+	   <meta content="en-us" http-equiv="Content-Language" />
+	   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+	   <link rel="shortcut icon" href="/favicon.png" />
+	   <title>TEAMMATES - Administrator</title>
+	   <!-- Bootstrap core CSS -->
+	   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	   <!-- Bootstrap theme -->
+	   <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+	   <link rel="stylesheet" href="/stylesheets/teammatesCommon.css" type="text/css" media="screen" />
+	   <script type="text/javascript" src="/js/googleAnalytics.js"></script>
+	   <script type="text/javascript" src="/js/jquery-minified.js"></script>
+	   <script type="text/javascript" src="/js/common.js"></script>
+	   <script type="text/javascript" src="/js/administrator.js"></script>
+	   <!-- Bootstrap core JavaScript ================================================== -->
+	   <script src="/bootstrap/js/bootstrap.min.js"></script>
+	   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	   <!--[if lt IE 9]>
+	       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	   <![endif]-->
+   </h:head>
+   <h:body id="body">
+    <div id="frameTop">
+        <div class="navbar navbar-inverse navbar-fixed-top" a:role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                        a:data-toggle="collapse" a:data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/index.html">TEAMMATES</a>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="contentLinks">
+        
+                    <ul class="nav navbar-nav">
+                        <li
+                            class="">
+                            <a href="">Create
+                                Instructor</a>
+                        </li>
+                        
+                        <li
+                            class="">
+                            <a href="">Account
+                                Management</a>
+                        </li>
+                        
+                        <li
+                            class="">
+                            <a href="">Search</a>
+                        </li>
+                        
+                        <li
+                            class="">
+                            <a href="">Activity
+                                Log</a>
+                        </li>
+                        
+                        <li
+                            class="">
+                            <a href="">Sessions</a>
+                        </li>
+        
+                        <li
+                            class="">
+        
+                            <a href="#" class="dropdown-toggle"
+                            a:data-toggle="dropdown" a:role="button"
+                            a:aria-expanded="false">Email <span
+                                class="caret"></span></a> 
+                            <ul class="dropdown-menu" a:role="menu">
+                                <li>
+                                     <a href="">Email</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="">Email Log</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+        
+                    <ul class="nav navbar-nav pull-right">
+                        <li>                
+                            <a class="nav logout"
+                                href="">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Logout
+                            </a>  
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="frameBody">
+        <div id="frameBodyWrapper" class="container">
+            <div id="topOfPage"></div>
+            <div id="headerOperation" class="page-header">
+            <h1>Add New Instructor</h1>
+            </div>
+            <br />
+            <div class="well well-plain">
+                <form method="post" action="" a:name="form_addinstructoraccount">
+                    <div>
+                        <label class="label-control">Short Name:</label>
+                       <input class="form-control" type="text" name="" value="" />
+                    </div>
+                    <div>
+                        <label class="label-control">Name:</label>
+                        <input class="form-control" type="text" name="" value="" />
+                    </div>
+                    <div>
+                        <label class="label-control">Email: </label>
+                        <input class="form-control" type="text" name="" value="" />
+                    </div>
+                    <div>
+                        <label class="label-control">Institution: </label>
+                        <input class="form-control" type="text" name="" value="" />
+                    </div>
+                    <div>
+                        <input id="btnAddInstructor" class="btn btn-primary" type="submit" value="Add Instructor" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="frameBottom">
+        <div id="footerComponent" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <span>[<a href="/index.html">TEAMMATES</a> V]</span>
+                    </div>
+                    <div class="col-md-8">
+                        [for <span class="highlight-white">NUS</span>]
+                    </div>
+                    <div class="col-md-2">
+                        <span>[Send <a class="link" href="../contact.html" a:target="_blank">Feedback</a>]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </h:body>
+</html>
