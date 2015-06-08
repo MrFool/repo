@@ -294,7 +294,7 @@ public class FieldValidator {
      * =======================================================================
      * Field: Team name
      */
-    private static final String TEAM_NAME_FIELD_NAME = "a team name";
+    private static final String TEAM_NAME_FIELD_NAME = "team names";
     public static final int TEAM_NAME_MAX_LENGTH = 60;
     public static final String TEAM_NAME_ERROR_MESSAGE = 
             "\"%s\" is not acceptable to TEAMMATES as "+TEAM_NAME_FIELD_NAME+" because it %s. " +
@@ -393,8 +393,8 @@ public class FieldValidator {
                     "Please only use alphabets, numbers and whitespace in %s.";
     
     public static final String INVALID_NAME_ERROR_MESSAGE = 
-            "\"%s\" is not acceptable to TEAMMATES as %s because it %s, " +
-            "%s must start with an alphanumeric character, and cannot contain any vertical bar (|) or percent sign (%%).";
+            "\"%s\" is not acceptable to TEAMMATES as %s because it %s. " +
+            "All %s must start with an alphanumeric character, and cannot contain any vertical bar (|) or percent sign (%%).";
     
     public static final String WHITESPACE_ONLY_OR_EXTRA_WHITESPACE_ERROR_MESSAGE =
             "The provided %s is not acceptable to TEAMMATES as it contains only whitespace or contains extra spaces at the beginning or at the end of the text.";
