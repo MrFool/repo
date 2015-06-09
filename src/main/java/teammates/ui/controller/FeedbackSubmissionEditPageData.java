@@ -56,4 +56,21 @@ public class FeedbackSubmissionEditPageData extends PageData {
 
         return result;
     }
+    
+    public boolean isPreview() {
+        return isPreview;
+    }
+    
+    public boolean isModeration() {
+        return isModeration;
+    }
+    
+    public boolean isHeaderHidden() {
+        return isHeaderHidden;
+    }
+    
+    public StudentAttributes getStudentToViewPageAs() {
+      System.out.println("NAME:" + studentToViewPageAs.name);
+        return studentToViewPageAs;
+    }
 }
