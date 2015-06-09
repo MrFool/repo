@@ -330,4 +330,8 @@ public class StudentAttributes extends EntityAttributes {
     public String getName() {
         return name;
     }
+    
+    public String getEmail() {
+        return email;
+    }
 }
