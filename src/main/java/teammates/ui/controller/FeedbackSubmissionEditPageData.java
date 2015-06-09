@@ -70,7 +70,6 @@ public class FeedbackSubmissionEditPageData extends PageData {
     }
     
     public StudentAttributes getStudentToViewPageAs() {
-      System.out.println("NAME:" + studentToViewPageAs.name);
         return studentToViewPageAs;
     }
 }
