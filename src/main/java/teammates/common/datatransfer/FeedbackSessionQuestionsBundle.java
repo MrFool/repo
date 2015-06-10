@@ -107,4 +107,8 @@ public class FeedbackSessionQuestionsBundle {
             questionResponseBundle.put(question, new ArrayList<FeedbackResponseAttributes>());
         }
     }
+    
+    public Map<FeedbackQuestionAttributes, List<FeedbackResponseAttributes>> getQuestionResponseBundle() {
+        return questionResponseBundle;
+    }
 }

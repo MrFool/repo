@@ -4,7 +4,7 @@
 <c:set var="motdUrl" value="<%= Config.inst().STUDENT_MOTD_URL %>" />
 <c:if test="${motdUrl != null && not empty motdUrl}">
     <script>
-        var url = window.location.origin + '/' + '<c:out value="${motdUrl}"/>';
+        var url = window.location.origin + '/' + '<c:out value="${motdUrl}" />';
         $.ajax({
             type: 'GET',
             url: url,

@@ -8,7 +8,9 @@ import teammates.common.datatransfer.AccountAttributes;
 import teammates.common.datatransfer.FeedbackSessionQuestionsBundle;
 import teammates.common.datatransfer.InstructorAttributes;
 import teammates.common.datatransfer.StudentAttributes;
+import teammates.common.util.Const;
 import teammates.common.util.StringHelper;
+import teammates.common.util.Url;
 
 public class FeedbackSubmissionEditPageData extends PageData {
     public FeedbackSessionQuestionsBundle bundle = null;
@@ -71,5 +73,28 @@ public class FeedbackSubmissionEditPageData extends PageData {
     
     public StudentAttributes getStudentToViewPageAs() {
         return studentToViewPageAs;
+    }
+    
+    public String getSubmitAction() {
+        return isModeration ? Const.ActionURIs.INSTRUCTOR_EDIT_STUDENT_FEEDBACK_SAVE
+                            : Const.ActionURIs.STUDENT_FEEDBACK_SUBMISSION_EDIT_SAVE;
+    }
+    
+    public boolean isSubmittable() {
+        return isSessionOpenForSubmission || isModeration;
+    }
+    
+    public String getRegistrationMessage() {
+        String joinUrl = new Url(Const.ActionURIs.STUDENT_COURSE_JOIN_NEW)
+                                 .withRegistrationKey(student.key)
+                                 .withStudentEmail(student.email)
+                                 .withCourseId(bundle.feedbackSession.courseId)
+                                 .toString();
+
+        return String.format(Const.StatusMessages.UNREGISTERED_STUDENT, student.name, joinUrl);
+    }
+    
+    public FeedbackSessionQuestionsBundle getBundle() {
+        return bundle;
     }
 }

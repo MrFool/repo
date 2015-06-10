@@ -17,12 +17,12 @@
             </c:when>
             <c:when test="${data.preview}">
                 <nav class="navbar navbar-default navbar-fixed-top">
-                    <h3 class="text-center">Previewing Session as Student ${data.studentToViewPageAs.name} (${data.studentToViewPageAs.email})</h3>
+                    <h3 class="text-center">Previewing Session as Student <c:out value="${data.studentToViewPageAs.name}" /> (<c:out value="${data.studentToViewPageAs.email}" />)</h3>
                 </nav>
             </c:when>
             <c:when test="${data.moderation}">
                 <nav class="navbar navbar-default navbar-fixed-top">
-                    <h3 class="text-center">Moderating Responses for Student ${data.studentToViewPageAs.name} (${data.studentToViewPageAs.email})</h3>
+                    <h3 class="text-center">Moderating Responses for Student <c:out value="${data.studentToViewPageAs.name}" /> (<c:out value="${data.studentToViewPageAs.email}" />)</h3>
                 </nav>
             </c:when>
         </c:choose>
