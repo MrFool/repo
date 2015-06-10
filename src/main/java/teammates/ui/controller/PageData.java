@@ -1013,4 +1013,8 @@ public class PageData {
     public String removeBracketsForArrayString(String arrayString) {
         return arrayString.substring(1, arrayString.length() - 1).trim();
     }
+    
+    public StudentAttributes getStudent() {
+        return student;
+    }
 }

@@ -470,4 +470,12 @@ public class FeedbackSessionAttributes extends EntityAttributes implements Sessi
     public String getSessionName() {
         return this.feedbackSessionName;
     }
+    
+    public String getFeedbackSessionName() {
+        return feedbackSessionName;
+    }
+    
+    public String getCourseId() {
+        return courseId;
+    }
 }

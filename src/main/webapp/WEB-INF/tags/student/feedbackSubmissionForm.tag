@@ -1,11 +1,10 @@
 <%@ tag description="Student feedback submission form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib tagdir="/WEB-INF/tags/student" prefix="ts" %>
 <%@ tag import="teammates.common.util.Const" %>
 <form method="post" name="form_student_submit_response" action="${submitAction}">
-    <%-- 
-        TODO: Add this in
-        <jsp:include page="<%= Const.ViewURIs.FEEDBACK_SUBMISSION_EDIT %>" /> 
-    --%>
+    <ts:feedbackSubmissionEditQuestionsAndResponses>
+    </ts:feedbackSubmissionEditQuestionsAndResponses>
     <div class="bold align-center">
         <c:if test="data.moderation">
             <input name="moderatedstudent" value="<c:out value='data.studentToViewPageAs.email' />" type="hidden">

@@ -82,6 +82,10 @@ public class AccountAttributes extends EntityAttributes {
     public String getInstitute() {
         return institute;
     }
+    
+    public String getEmail() {
+        return email;
+    }
 
     public List<String> getInvalidityInfo() {
         FieldValidator validator = new FieldValidator();

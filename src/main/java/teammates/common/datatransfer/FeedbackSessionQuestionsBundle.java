@@ -111,4 +111,8 @@ public class FeedbackSessionQuestionsBundle {
     public Map<FeedbackQuestionAttributes, List<FeedbackResponseAttributes>> getQuestionResponseBundle() {
         return questionResponseBundle;
     }
+    
+    public FeedbackSessionAttributes getFeedbackSession() {
+        return feedbackSession;
+    }
 }

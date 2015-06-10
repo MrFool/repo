@@ -334,4 +334,8 @@ public class StudentAttributes extends EntityAttributes {
     public String getEmail() {
         return email;
     }
+    
+    public String getKey() {
+        return key;
+    }
 }

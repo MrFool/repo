@@ -6,8 +6,6 @@
     <script type="text/javascript" src="/js/student.js"></script>
 </c:set>
 <ts:studentPageFeedbackSessions pageTitle="TEAMMATES - Submit Feedback" bodyTitle="Submit Feedback" jsIncludes="${jsIncludes}">
-    <ts:registrationMessage>
-    </ts:registrationMessage>
-    <ts:feedbackSubmissionForm>
-    </ts:feedbackSubmissionForm>
+    <ts:registrationMessage />
+    <ts:feedbackSubmissionForm />
 </ts:studentPageFeedbackSessions>

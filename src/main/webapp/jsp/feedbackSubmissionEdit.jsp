@@ -29,6 +29,8 @@
 
 <jsp:include page="<%= Const.ViewURIs.STATUS_MESSAGE %>" />
 
+<!-- stopped here -->
+
 <div class="well well-plain" id="course1">
     <div class="panel-body">
         <div class="form-horizontal">
