@@ -13,7 +13,7 @@
 	    <c:choose>
             <c:when test="${not data.headerHidden}">
                 <ts:navBar />
-                <%-- <jsp:include page="<%= Const.ViewURIs.STUDENT_MOTD %>" /> --%>
+                <ts:studentMessageOfTheDay />
             </c:when>
             <c:when test="${data.preview}">
                 <nav class="navbar navbar-default navbar-fixed-top">
